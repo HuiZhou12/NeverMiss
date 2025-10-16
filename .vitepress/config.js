@@ -39,8 +39,8 @@ export default defineConfig({
     },
     //增加可编辑选项
     editLink:{
-      pattern: 'https://github.com/HuiZhou12/NeverMiss/edit/main/docs/:path',
-      text: '在 GitHub 上编辑此页(该功能还处于测试阶段，暂不开放)'
+      pattern: 'https://github.com/HuiZhou12/NeverMiss/tree/main/:path',
+      text: '在 GitHub 上编辑此页'
     },
     nav: [
       { text: 'Home', link: '/' },
@@ -51,6 +51,8 @@ export default defineConfig({
         text: '介绍',
         items: [
           { text: '项目介绍', link: '/project/overview' },
+          { text: '使用指南', link: '/project/usingCommodation' },
+          { text: '团队介绍', link: '/project/team' }
         ]
       },
       {
@@ -107,7 +109,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/HuiZhou12/NeverMiss' }
     ],
     footer:{
       message: '重庆财经学院',
