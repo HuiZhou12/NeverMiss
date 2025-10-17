@@ -34,13 +34,33 @@ const members = [
       <template #title>团队成员</template>
       <template #lead>这是一个充满活力和创造力的团队，我们致力于通过技术创新实现更高效的会议记录和管理。</template>
     </VPTeamPageTitle>
-    <VPTeamMembers :members="members" />
+    <div class="team">
+      <VPTeamMembers :members="members" class="team-item"/>
+    </div>
   </VPTeamPage>
 </template>
-<style scoped>
+<style scoped lang="scss">
 .vp-team-page {
     font-family: 'Punctuation SC', 'Inter', ui-sans-serif, system-ui,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji'
+    'Noto Color Emoji';
+  text-align: center;
+}
+.team {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap; /* 允许换行 */
+  justify-content: center; /* 居中对齐 */
+  gap: 2rem; /* 每个成员之间的间距 */
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+:deep(.item){ 
+    text-align: center; /* 文字居中 */
+    :hover{
+      transform: scale(1.05); /* 鼠标悬停时放大 */
+      transition: transform 0.3s; /* 添加过渡效果 */
+    }
+
 }
 </style>
