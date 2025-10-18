@@ -51,36 +51,13 @@ export default defineConfig({
         text: '介绍',
         items: [
           { text: '项目介绍', link: '/project/overview' },
+          {text: '快速开始', link: '/project/quickStart'},
           { text: '使用指南', link: '/project/usingCommodation' },
           { text: '团队介绍', link: '/project/team' }
         ]
       },
       {
-        text: '第一阶段',
-        collapsed: true,
-        items: [
-          { text: '功能概述', link: '/project/phase1/summarize' },
-          { text: '技术实现', link: '/project/phase1/techcologicalRealization' },
-        ]
-      },
-      {
-        text: '第二阶段',
-        collapsed: true,
-        items: [
-          { text: '功能概述', link: '/project/phase2/summarize' },
-          { text: '技术实现', link: '/project/phase2/techcologicalRealization' },
-        ]
-      },
-      {
-        text: '第三阶段',
-        collapsed: true,
-        items: [
-          { text: '功能概述', link: '/project/phase3/summarize' },
-          { text: '技术实现', link: '/project/phase3/techcologicalRealization' },
-        ]
-      },
-      {
-        text: '主要功能概述',
+        text: '核心功能',
         collapsed: true,
         items: [
           { text: '前端', link: 'project/function/frontend' },
@@ -88,24 +65,12 @@ export default defineConfig({
         ]
       },
       {
-        text: '项目演示',
-        items:[
-          { text: 'AI日报', link: '/demo/ai-report' }
+        text: '开发相关',
+        items: [
+          { text: '可行性分析报告', link: 'project/more/feasibility-report' },
+          { text: "api文档", link: 'project/more/api-documentation' }
         ]
       },
-      {
-        text: '更多',
-        items: [
-          { text: '项目文档', link: '/project' },
-        ]
-      },
-      {
-        text: 'VitePress默认侧边栏配置实例',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
     ],
 
     socialLinks: [

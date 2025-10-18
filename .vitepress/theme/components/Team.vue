@@ -17,12 +17,27 @@ const members = [
     ]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/40024027?v=4',
-    name: 'Test',
-    title: '你好',
+    avatar: 'https://avatars.githubusercontent.com/u/238691865?v=4',
+    title: '前端开发',
+    name: '1668408381-alt',
     links: [
-      { icon: 'bilibili', link: 'https://github.com/antfu' },
-      { icon: 'twitter', link: 'https://twitter.com/antfu7' }
+      { icon: 'github', link: 'https://github.com/1668408381-alt' },
+    ]
+  },
+    {
+    avatar: 'https://avatars.githubusercontent.com/u/238673402?v=4',
+    title: '前端开发',
+    name: 'y14070228-ops',
+    links: [
+      { icon: 'github', link: 'https://github.com/y14070228-ops' },
+    ]
+  },
+    {
+    avatar: 'https://avatars.githubusercontent.com/u/238811297?v=4',
+    title: '前端开发',
+    name: 'Heiqilong',
+    links: [
+      { icon: 'github', link: 'https://github.com/Heiqilong' },
     ]
   }
 ]
@@ -40,6 +55,9 @@ const members = [
   </VPTeamPage>
 </template>
 <style scoped lang="scss">
+.VPTeamPage{
+  margin: 50px 0;
+}
 .vp-team-page {
     font-family: 'Punctuation SC', 'Inter', ui-sans-serif, system-ui,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -50,10 +68,9 @@ const members = [
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap; /* 允许换行 */
+}
+:deep(.container){
   justify-content: center; /* 居中对齐 */
-  gap: 2rem; /* 每个成员之间的间距 */
-  transform: scale(1);
-  transition: transform 0.5s ease-in-out;
 }
 :deep(.item){ 
     text-align: center; /* 文字居中 */
@@ -61,6 +78,5 @@ const members = [
       transform: scale(1.05); /* 鼠标悬停时放大 */
       transition: transform 0.3s; /* 添加过渡效果 */
     }
-
 }
 </style>

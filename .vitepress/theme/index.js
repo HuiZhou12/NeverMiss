@@ -17,6 +17,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component('TeamPage', TeamPage)
     app.component('Layout', Layout)
-    app.component('browserInfo', browerinfo.browserInfo)
+    app.config.globalProperties.$browerinfo = browerinfo.browserInfo
   }
 }
